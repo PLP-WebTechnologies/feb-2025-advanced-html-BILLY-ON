@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-sace=1.0" />
+    <title>HTML5 Elements Demo</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Welcome to the HTML5 Demo Page</h1>
+      <p>
+        This page showcases various HTML5 elements including forms, multimedia,
+        images, tables, and lists.
+      </p>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+      <h2>Ordered List (Roman Numerals)</h2>
+      <ol type="I">
+        <li>Introduction</li>
+        <li>Content</li>
+        <li>Usage</li>
+        <li>Examples</li>
+        <li>Conclusion</li>
+      </ol>
+    </section>
+
+    <!-- External Image -->
+    <section>
+      <h2>External Image from Pexels</h2>
+      <img
+        src="https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg"
+        alt="A beautiful nature scene"
+        width="500"
+      />
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+      <h2>Contacts Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice Smith</td>
+            <td>123 Maple St</td>
+            <td>123-456-7890</td>
+            <td>alice@example.com</td>
+          </tr>
+          <tr>
+            <td>Bob Johnson</td>
+            <td>456 Oak Ave</td>
+            <td>234-567-8901</td>
+            <td>bob@example.com</td>
+          </tr>
+          <tr>
+            <td>Carol White</td>
+            <td>789 Pine Rd</td>
+            <td>345-678-9012</td>
+            <td>carol@example.com</td>
+          </tr>
+          <tr>
+            <td>David Lee</td>
+            <td>321 Cedar Dr</td>
+            <td>456-789-0123</td>
+            <td>david@example.com</td>
+          </tr>
+          <tr>
+            <td>Eve Brown</td>
+            <td>654 Birch Ln</td>
+            <td>567-890-1234</td>
+            <td>eve@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="/submit" method="post">
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        /><br /><br />
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@domain.com"
+          required
+        /><br /><br />
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter a strong password"
+          required
+          minlength="6"
+        /><br /><br />
+
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <!-- Dropdown -->
+        <label for="role">Select Role:</label>
+        <select id="role" name="role" required>
+          <option value="">--Please choose--</option>
+          <option value="student">Student</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option></select
+        ><br /><br />
+
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+        <label
+          ><input type="radio" name="gender" value="male" required />
+          Male</label
+        >
+        <label
+          ><input type="radio" name="gender" value="female" /> Female</label
+        >
+        <label><input type="radio" name="gender" value="other" /> Other</label
+        ><br /><br />
+
+        <!-- Checkboxes -->
+        <p>Interests:</p>
+        <label
+          ><input type="checkbox" name="interests" value="coding" />
+          Coding</label
+        >
+        <label
+          ><input type="checkbox" name="interests" value="design" />
+          Design</label
+        >
+        <label
+          ><input type="checkbox" name="interests" value="music" /> Music</label
+        ><br /><br />
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register" />
+      </form>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section>
+      <h2>Multimedia Elements</h2>
+
+      <!-- Audio -->
+      <h3>Audio Example</h3>
+      <audio controls>
+        <source
+          src="https://www.w3schools.com/html/horse.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- Video -->
+      <h3>Video Example</h3>
+      <video width="480" controls>
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Jesse Amukowa PLP-2025 HTML5 Demo Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
